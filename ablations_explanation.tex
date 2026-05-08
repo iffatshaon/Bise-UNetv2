@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\title{BiSeNet \& BiSeUNetV7 Ablation Models}
+\author{Documentation}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This document outlines the 10 ablation models engineered for the BiSeUNetV7 architecture, designed to evaluate the isolated and combined contributions of its constituent components---ranging from the Spatial Path and Context Path features to the fusion modules, skip connections, and grouped Ghost convolutions. 
+
+\section{Ablation Variants}
+
+\subsection{1. BiseUNetV7 Ablation: No Skips (biseunetv7\_ablation\_no\_skips)}
+\textbf{Description:} Eliminates all skip connections that run from the Context Path directly to the UP stages of the Ghost Decoder. 
+\\
+\textbf{Architectural Impact:} The decoder operates entirely on the deepest /32 and /16 representations without tapping into the /8 or /4 scale features from the encoder, severely crippling local detail recovery.
+
+\subsection{2. BiseUNetV7 Ablation: ARM on Spatial Path (biseunetv7\_ablation\_arm\_sp)}
+\textbf{Description:} Injects an Attention Refinement Module (ARM) at the tail of the Spatial Path (\textit{sp8}) prior to fusion with the Context Path.
+\\
+\textbf{Architectural Impact:} Usually, ARM operates strictly over Context Path features to guide global context. This ablation forces the Spatial Path to compute its own channel-wise attention, measuring if Spatial features benefit from identical self-calibration before fusing.
+
+\subsection{3. BiseUNetV7 Ablation: Early FFM (biseunetv7\_ablation\_ffm\_early)}
+\textbf{Description:} Lowers the integration point of the Feature Fusion Module. Instead of fusing the refined contextual /16 layer with the spatial /8 layer, it fuses the unrefined /8 contextual layer with the spatial /8 layer.
+\\
+\textbf{Architectural Impact:} By merging features at a shallower depth, the network relies more on lower-level context semantic features against spatial edges, avoiding the deeper /16 mapping for its primary fusion step.
+
+\subsection{4. BiSeNet DSConv (bisenet\_dsconv)}
+\textbf{Description:} Replaces all standard, heavy 3x3 convolutions with Depthwise Separable Convolutions (DSConv) throughout the entire baseline BiSeNet network space.
+\\
+\textbf{Architectural Impact:} Strips out parameter overhead to verify the performance latency and degradation strictly resulting from spatial/channel decoupled processing.
+
+\subsection{5. BiseUNetV7 Ablation: No Spatial Path (biseunetv7\_ablation\_no\_sp)}
+\textbf{Description:} Decapitates the Spatial Path entirely resulting in a purely U-Net shaped architecture that operates solely over the Context Path.
+\\
+\textbf{Architectural Impact:} Assesses the necessity of the dedicated high-resolution edge-preserving path. PreStage 1 Fusion and FFMLight are inherently disabled, routing Skip Contexts directly into the Ghost Decoder.
+
+\subsection{6. BiseUNetV7 Ablation: No ECA (biseunetv7\_ablation\_no\_eca)}
+\textbf{Description:} Eliminates the Efficient Channel Attention (ECA) modules across the fusion layers and decoder stages.
+\\
+\textbf{Architectural Impact:} Strips parameter-less 1D channel attention to quantify how much mapping coherence relies on dynamic feature scaling versus geometric convolution alone.
+
+\subsection{7. BiseUNetV7 Ablation: No Ghost Convolutions (biseunetv7\_ablation\_no\_ghost)}
+\textbf{Description:} Replaces all GhostDSConv elements throughout the Spatial Path, Fusion stages, and Decoder with standard, heavy 3x3 Conv-BN-ReLU instances.
+\\
+\textbf{Architectural Impact:} Exposes the true parameter compression efficacy of the Ghost convolutions, inflating parameter mass to evaluate the trade-off in dense feature mapping versus generated (cheap) feature mapping.
+
+\subsection{8. BiseUNetV7 Ablation: No FFM Light (biseunetv7\_ablation\_no\_ffm\_light)}
+\textbf{Description:} Explicitly disables the secondary, residual intermediate fusion layer (FFMLight) located at the /8 scale dimension.
+\\
+\textbf{Architectural Impact:} Evaluates if the primary PreStage-1 fusion at /16 is sufficient for boundary recovery, or if the network truly depends on the secondary /8 cascade to localize features effectively. 
+
+\subsection{9. BiseUNetV7 Ablation: ASPP over Global Pool (biseunetv7\_ablation\_aspp)}
+\textbf{Description:} Replaces the primitive Global Average Pooling bottleneck block inside the Context Path with an Atrous Spatial Pyramid Pooling (ASPP) module.
+\\
+\textbf{Architectural Impact:} Enhances the /32 contextual scale with multi-scale dilated convolutions ($r=2, 4, 6$) to capture broader receptive fields, trading efficiency for structural acuity compared to simple average reduction.
+
+\subsection{10. BiseUNetV7 Ablation: Spatial Path Skips (biseunetv7\_ablation\_sp\_skips)}
+\textbf{Description:} Reroutes isolated representations directly from the Spatial Path layer stages (sp2, sp4) across to the Ghost Decoder, joining the conventional Context Path skips.
+\\
+\textbf{Architectural Impact:} Grants the upward-scaling decoder direct visualization into pristine high-resolution geometric maps avoiding compression-expansion distortion, severely amplifying the dependency on the shallow semantic path.
+
+\end{document}

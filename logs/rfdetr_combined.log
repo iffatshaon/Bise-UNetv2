@@ -1,0 +1,71 @@
+nohup: ignoring input
+/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GeForce GTX 1080 Ti which is of cuda capability 6.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (7.0) - (12.0)
+    
+  warnings.warn(
+/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:304: UserWarning: 
+    Please install PyTorch with a following CUDA
+    configurations:  12.6 following instructions at
+    https://pytorch.org/get-started/locally/
+    
+  warnings.warn(matched_cuda_warn.format(matched_arches))
+/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU1 NVIDIA GeForce GTX 1080 Ti which is of cuda capability 6.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (7.0) - (12.0)
+    
+  warnings.warn(
+/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:326: UserWarning: 
+NVIDIA GeForce GTX 1080 Ti with CUDA capability sm_61 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_70 sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.
+If you want to use the NVIDIA GeForce GTX 1080 Ti GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(
+Using device: cuda
+Loading Combined data from /media/iffat/DataDrive/dataset/CombinedDataset...
+Found 41186 total pairs.
+Split: Train=28830, Val=6177, Test=6179
+Building model: rfdetr
+Params: 12.50M
+
+Starting Training...
+Train:   0%|                                                               | 0/3604 [00:00<?, ?it/s]                                                                                                    Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/train/train_combined.py", line 186, in <module>
+    main()
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/train/train_combined.py", line 141, in main
+    tr_loss, tr_dice, tr_iou = train_one_epoch(model, train_loader, device, opt, scaler, args)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/train/train_combined.py", line 52, in train_one_epoch
+    logits = model(xb)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/train/models/rfdetr_seg.py", line 268, in forward
+    feats = self.backbone(x)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/timm/models/_features.py", line 345, in forward
+    return list(self._collect(x).values())
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/timm/models/_features.py", line 299, in _collect
+    x = module(x)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 548, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/media/iffat/DataDrive/Projects/Kvasir-structured/.venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 543, in _conv_forward
+    return F.conv2d(
+torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
