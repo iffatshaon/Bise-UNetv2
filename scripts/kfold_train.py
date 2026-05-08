@@ -22,7 +22,8 @@ def train_one_epoch(model, loader, device, optimizer, scaler, mixed, bce_w, dice
     model.train()
     total_loss, total_dice = 0.0, 0.0
     n = 0
-    for xb, yb in loader:
+    pbar = tqdm(loader, desc="  Training", leave=False)
+    for xb, yb in pbar:
         xb, yb = xb.to(device, non_blocking=True), yb.to(device, non_blocking=True)
         optimizer.zero_grad(set_to_none=True)
         with autocast('cuda', enabled=mixed):
@@ -40,6 +41,7 @@ def train_one_epoch(model, loader, device, optimizer, scaler, mixed, bce_w, dice
         dice, _ = seg_metrics_from_logits(logits, yb)
         total_dice += dice * bs
         n += bs
+        pbar.set_postfix({"loss": f"{loss.item():.4f}"})
     return total_loss / n, total_dice / n
 
 @torch.no_grad()
@@ -124,6 +126,10 @@ def main():
                 step_per_batch = True
                 
             best_dice = 0.0
+            patience = 10
+            patience_counter = 0
+            min_delta = 1e-4
+            
             fold_dir = os.path.join(args.out_dir, args.model, f"seed_{seed}", f"fold_{fold}")
             os.makedirs(fold_dir, exist_ok=True)
             
@@ -136,12 +142,19 @@ def main():
                 elif hparams["scheduler"] == "cosine":
                     scheduler.step()
                 
-                if va_dice > best_dice:
+                # Check for improvement
+                if va_dice > best_dice + min_delta:
                     best_dice = va_dice
+                    patience_counter = 0
                     torch.save(model.state_dict(), os.path.join(fold_dir, "best.pt"))
+                else:
+                    patience_counter += 1
                 
-                if epoch % 10 == 0 or epoch == args.epochs:
-                    print(f"Epoch {epoch:03d} | Tr Dice: {tr_dice:.4f} | Va Dice: {va_dice:.4f}")
+                print(f"Epoch {epoch:03d}/{args.epochs} | Tr Dice: {tr_dice:.4f} | Va Dice: {va_dice:.4f} | Best: {best_dice:.4f} | Patience: {patience_counter}/{patience}")
+                
+                if patience_counter >= patience:
+                    print(f"Early stopping triggered at epoch {epoch}")
+                    break
             
             seed_results.append(best_dice)
             print(f"Fold {fold+1} Best Dice: {best_dice:.4f}")

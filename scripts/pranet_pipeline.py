@@ -28,10 +28,14 @@ def main():
     
     # 0. Ensure splits exist (run a small script or just import and call)
     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from preprocess.pranet_datasets import get_kvasir_pairs, get_clinicdb_pairs
+    from preprocess.pranet_datasets import get_kvasir_pairs, get_clinicdb_pairs, get_merged_train_pairs
     get_kvasir_pairs(args.data_root)
     get_clinicdb_pairs(args.data_root)
-    print("Splits confirmed/created.")
+    pairs = get_merged_train_pairs(args.data_root)
+    print(f"Splits confirmed/created. Total merged training pairs: {len(pairs)}")
+    if len(pairs) == 0:
+        print("CRITICAL: No training pairs found! Please check your --data-root path.")
+        sys.exit(1)
 
     summary_tables = []
 

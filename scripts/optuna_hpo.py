@@ -5,6 +5,7 @@ import json
 import torch
 import torch.optim as optim
 import optuna
+from tqdm import tqdm
 from torch.amp import GradScaler, autocast
 from sklearn.model_selection import KFold
 
@@ -31,6 +32,12 @@ def objective(trial, args, device):
     # K-fold CV for HPO (using 3 folds as per plan)
     kf = KFold(n_splits=3, shuffle=True, random_state=42)
     pairs = get_merged_train_pairs(args.data_root)
+    
+    if not pairs:
+        print("ERROR: No dataset pairs found. Check your data-root.")
+        return 0.0
+    
+    print(f"HPO starting for {args.model}. Total pairs: {len(pairs)}")
     
     fold_dices = []
     
@@ -63,7 +70,8 @@ def objective(trial, args, device):
             
         best_fold_dice = 0.0
         
-        for epoch in range(1, args.epochs + 1):
+        pbar = tqdm(range(1, args.epochs + 1), desc=f"Fold {fold} Trial {trial.number}", leave=False)
+        for epoch in pbar:
             # Train
             model.train()
             for xb, yb in train_loader:
@@ -97,14 +105,21 @@ def objective(trial, args, device):
                 scheduler.step()
                 
             best_fold_dice = max(best_fold_dice, va_dice)
+            pbar.set_postfix({"dice": f"{va_dice:.4f}"})
             
-            # Report to Optuna
-            trial.report(va_dice, epoch)
-            if trial.should_prune():
-                raise optuna.exceptions.TrialPruned()
+            # Show progress every epoch in HPO as well
+            if epoch % 5 == 0 or epoch == args.epochs:
+                 print(f"Trial {trial.number} | Fold {fold} | Epoch {epoch:02d} | Dice: {va_dice:.4f} | Best: {best_fold_dice:.4f}")
+
+            # Report to Optuna only for the first fold to avoid step collisions
+            if fold == 0:
+                trial.report(va_dice, epoch)
+                if trial.should_prune():
+                    print(f"  Trial {trial.number} pruned at epoch {epoch}")
+                    raise optuna.exceptions.TrialPruned()
         
         fold_dices.append(best_fold_dice)
-        if fold == 0 and len(fold_dices) > 0 and fold_dices[0] < 0.5: # Early exit for bad trials
+        if fold == 0 and fold_dices[0] < 0.3: # Early exit for very bad trials
              break
 
     return sum(fold_dices) / len(fold_dices)
