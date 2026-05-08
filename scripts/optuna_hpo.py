@@ -69,10 +69,11 @@ def objective(trial, args, device):
             scheduler = optim.lr_scheduler.OneCycleLR(optimizer, max_lr=lr, total_steps=args.epochs * len(train_loader))
             
         best_fold_dice = 0.0
+        history = []
         
         pbar = tqdm(range(1, args.epochs + 1), desc=f"Fold {fold} Trial {trial.number}", leave=False)
         for epoch in pbar:
-            # Train
+            # ... existing train/val code ...
             model.train()
             for xb, yb in train_loader:
                 xb, yb = xb.to(device, non_blocking=True), yb.to(device, non_blocking=True)
@@ -85,8 +86,7 @@ def objective(trial, args, device):
                 scaler.update()
                 if scheduler_name == "onecycle":
                     scheduler.step()
-            
-            # Val
+
             model.eval()
             total_dice, n = 0.0, 0
             with torch.no_grad():
@@ -103,7 +103,8 @@ def objective(trial, args, device):
                 scheduler.step(va_dice)
             elif scheduler_name == "cosine":
                 scheduler.step()
-                
+
+            history.append({"epoch": epoch, "dice": va_dice})
             best_fold_dice = max(best_fold_dice, va_dice)
             pbar.set_postfix({"dice": f"{va_dice:.4f}"})
             
@@ -117,6 +118,12 @@ def objective(trial, args, device):
                 if trial.should_prune():
                     print(f"  Trial {trial.number} pruned at epoch {epoch}")
                     raise optuna.exceptions.TrialPruned()
+        
+        # Save trial history
+        import pandas as pd
+        trial_dir = os.path.join(args.out_dir, f"trial_{trial.number}")
+        os.makedirs(trial_dir, exist_ok=True)
+        pd.DataFrame(history).to_csv(os.path.join(trial_dir, f"fold_{fold}_history.csv"), index=False)
         
         fold_dices.append(best_fold_dice)
         if fold == 0 and fold_dices[0] < 0.3: # Early exit for very bad trials

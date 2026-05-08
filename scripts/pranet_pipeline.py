@@ -102,7 +102,7 @@ def main():
             print(f"Using existing evaluation for {model_name}")
 
         # 4. Collect results for consolidated table
-        model_summary = pd.read_csv(summary_file, index_index=True)
+        model_summary = pd.read_csv(summary_file, index_col=0)
         model_summary['model'] = model_name
         summary_tables.append(model_summary)
 

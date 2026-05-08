@@ -133,10 +133,12 @@ def main():
             fold_dir = os.path.join(args.out_dir, args.model, f"seed_{seed}", f"fold_{fold}")
             os.makedirs(fold_dir, exist_ok=True)
             
+            history = []
             for epoch in range(1, args.epochs + 1):
                 tr_loss, tr_dice = train_one_epoch(model, train_loader, device, optimizer, scaler, args.mixed, bce_w, dice_w, scheduler, step_per_batch)
                 va_loss, va_dice = evaluate(model, val_loader, device, args.mixed, bce_w, dice_w)
                 
+                # ... existing scheduler code ...
                 if hparams["scheduler"] == "reduceLR":
                     scheduler.step(va_dice)
                 elif hparams["scheduler"] == "cosine":
@@ -150,11 +152,21 @@ def main():
                 else:
                     patience_counter += 1
                 
+                history.append({
+                    "epoch": epoch,
+                    "tr_loss": tr_loss, "tr_dice": tr_dice,
+                    "va_loss": va_loss, "va_dice": va_dice
+                })
+                
                 print(f"Epoch {epoch:03d}/{args.epochs} | Tr Dice: {tr_dice:.4f} | Va Dice: {va_dice:.4f} | Best: {best_dice:.4f} | Patience: {patience_counter}/{patience}")
                 
                 if patience_counter >= patience:
                     print(f"Early stopping triggered at epoch {epoch}")
                     break
+            
+            # Save history
+            import pandas as pd
+            pd.DataFrame(history).to_csv(os.path.join(fold_dir, "history.csv"), index=False)
             
             seed_results.append(best_dice)
             print(f"Fold {fold+1} Best Dice: {best_dice:.4f}")
