@@ -22,7 +22,7 @@ def objective(trial, args, device):
     # Hyperparameters to search
     lr = trial.suggest_float("lr", 1e-5, 1e-2, log=True)
     weight_decay = trial.suggest_float("weight_decay", 1e-6, 1e-3, log=True)
-    batch_size = trial.suggest_categorical("batch_size", [8, 16, 32, 64])
+    batch_size = trial.suggest_categorical("batch_size", [32, 64, 128, 256])
     scheduler_name = trial.suggest_categorical("scheduler", ["cosine", "reduceLR", "onecycle"])
     bce_weight = trial.suggest_float("bce_weight", 0.3, 0.7)
     img_size = trial.suggest_categorical("img_size", [256, 352])
@@ -146,10 +146,20 @@ def main():
     os.makedirs(args.out_dir, exist_ok=True)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
-    study = optuna.create_study(direction="maximize", pruner=optuna.pruners.MedianPruner(n_warmup_steps=10))
+    # Use SQLite for parallel trials
+    db_path = os.path.join(args.out_dir, f"optuna_{args.model}.db")
+    storage_url = f"sqlite:///{os.path.abspath(db_path)}"
+    
+    study = optuna.create_study(
+        study_name=f"hpo_{args.model}",
+        storage=storage_url,
+        direction="maximize",
+        load_if_exists=True,
+        pruner=optuna.pruners.MedianPruner(n_warmup_steps=10)
+    )
     study.optimize(lambda trial: objective(trial, args, device), n_trials=args.n_trials)
     
-    print("Best hyperparameters:", study.best_params)
+    print(f"Best hyperparameters for {args.model}:", study.best_params)
     
     # Save best params
     with open(os.path.join(args.out_dir, f"best_hparams_{args.model}.json"), "w") as f:
