@@ -22,7 +22,7 @@ def objective(trial, args, device):
     # Hyperparameters to search
     lr = trial.suggest_float("lr", 1e-5, 1e-2, log=True)
     weight_decay = trial.suggest_float("weight_decay", 1e-6, 1e-3, log=True)
-    batch_size = trial.suggest_categorical("batch_size", [4, 8, 16])
+    batch_size = trial.suggest_categorical("batch_size", [8, 16, 32, 64])
     scheduler_name = trial.suggest_categorical("scheduler", ["cosine", "reduceLR", "onecycle"])
     bce_weight = trial.suggest_float("bce_weight", 0.3, 0.7)
     img_size = trial.suggest_categorical("img_size", [256, 352])
