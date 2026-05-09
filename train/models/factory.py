@@ -7,6 +7,7 @@ from .hardnet_model import HardNetMSEG
 from .rfdetr_seg import RFDetrSeg
 from .eomt_seg import EoMTSeg
 from .cd_polypnet import get_cd_polypnet
+from .pranet_model import PraNet
 
 def get_model(name, **kwargs):
     name = name.lower()
@@ -50,8 +51,11 @@ def get_model(name, **kwargs):
             n_tokens=kwargs.get('n_tokens', 4),
         )
 
-    elif name == 'cdpolypnet':
+    elif name == 'cdpolypnet' or name == 'cd_polypnet':
         return get_cd_polypnet(use_pretrained=False, out_ch=out_ch)
+        
+    elif name == 'pranet':
+        return PraNet(n_channels=in_ch, n_classes=out_ch)
 
     else:
         raise ValueError(f"Unknown model architecture: {name}")
