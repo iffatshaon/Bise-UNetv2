@@ -1,0 +1,8 @@
+{
+  "lr": 0.001238732191090313,
+  "weight_decay": 1.217686331928408e-05,
+  "batch_size": 32,
+  "scheduler": "onecycle",
+  "bce_weight": 0.4762014924111371,
+  "img_size": 256
+}

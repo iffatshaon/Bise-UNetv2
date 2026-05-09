@@ -1,0 +1,2454 @@
+{
+  "train": [
+    [
+      "./data/cvc_clinicDB/PNG/Original/364.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/364.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/268.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/268.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/280.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/280.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/422.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/422.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/225.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/225.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/167.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/167.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/383.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/383.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/550.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/550.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/523.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/523.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/67.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/67.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/232.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/232.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/42.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/42.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/312.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/312.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/196.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/196.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/218.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/218.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/455.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/455.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/35.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/35.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/290.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/290.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/63.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/63.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/508.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/508.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/206.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/206.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/55.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/55.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/293.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/293.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/451.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/451.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/519.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/519.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/380.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/380.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/378.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/378.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/269.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/269.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/356.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/356.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/253.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/253.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/321.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/321.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/222.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/222.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/373.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/373.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/557.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/557.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/511.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/511.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/166.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/166.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/524.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/524.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/568.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/568.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/576.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/576.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/217.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/217.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/606.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/606.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/387.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/387.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/223.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/223.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/11.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/11.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/340.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/340.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/598.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/598.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/491.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/491.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/357.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/357.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/186.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/186.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/396.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/396.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/118.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/118.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/465.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/465.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/434.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/434.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/358.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/358.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/205.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/205.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/115.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/115.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/99.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/99.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/501.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/501.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/386.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/386.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/418.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/418.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/155.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/155.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/231.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/231.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/419.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/419.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/250.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/250.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/515.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/515.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/5.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/5.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/592.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/592.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/152.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/152.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/177.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/177.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/575.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/575.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/259.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/259.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/443.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/443.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/588.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/588.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/547.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/547.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/174.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/174.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/403.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/403.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/260.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/260.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/95.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/95.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/119.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/119.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/47.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/47.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/334.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/334.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/203.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/203.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/537.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/537.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/29.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/29.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/267.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/267.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/516.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/516.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/393.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/393.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/87.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/87.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/411.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/411.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/315.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/315.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/382.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/382.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/272.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/272.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/195.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/195.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/112.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/112.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/536.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/536.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/527.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/527.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/79.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/79.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/137.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/137.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/278.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/278.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/106.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/106.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/485.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/485.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/604.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/604.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/535.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/535.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/328.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/328.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/367.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/367.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/347.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/347.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/182.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/182.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/316.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/316.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/58.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/58.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/60.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/60.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/351.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/351.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/609.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/609.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/567.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/567.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/414.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/414.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/543.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/543.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/265.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/265.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/120.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/120.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/591.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/591.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/46.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/46.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/368.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/368.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/111.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/111.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/483.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/483.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/325.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/325.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/54.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/54.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/530.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/530.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/19.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/19.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/424.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/424.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/179.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/179.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/377.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/377.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/497.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/497.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/239.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/239.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/468.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/468.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/587.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/587.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/159.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/159.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/310.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/310.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/398.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/398.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/254.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/254.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/229.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/229.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/216.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/216.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/531.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/531.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/405.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/405.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/114.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/114.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/566.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/566.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/558.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/558.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/470.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/470.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/427.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/427.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/247.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/247.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/518.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/518.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/540.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/540.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/263.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/263.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/91.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/91.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/473.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/473.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/353.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/353.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/15.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/15.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/36.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/36.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/384.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/384.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/477.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/477.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/603.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/603.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/492.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/492.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/160.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/160.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/273.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/273.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/526.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/526.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/514.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/514.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/596.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/596.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/77.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/77.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/194.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/194.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/14.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/14.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/82.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/82.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/153.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/153.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/306.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/306.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/241.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/241.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/350.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/350.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/286.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/286.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/180.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/180.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/421.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/421.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/32.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/32.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/156.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/156.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/544.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/544.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/401.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/401.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/572.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/572.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/8.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/8.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/406.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/406.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/510.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/510.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/457.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/457.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/459.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/459.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/199.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/199.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/339.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/339.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/28.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/28.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/233.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/233.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/69.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/69.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/500.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/500.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/327.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/327.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/612.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/612.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/258.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/258.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/116.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/116.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/124.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/124.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/392.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/392.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/228.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/228.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/338.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/338.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/569.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/569.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/462.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/462.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/200.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/200.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/331.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/331.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/381.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/381.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/297.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/297.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/76.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/76.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/129.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/129.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/551.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/551.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/534.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/534.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/504.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/504.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/109.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/109.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/162.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/162.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/75.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/75.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/299.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/299.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/12.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/12.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/110.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/110.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/484.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/484.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/463.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/463.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/215.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/215.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/404.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/404.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/296.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/296.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/245.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/245.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/590.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/590.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/146.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/146.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/178.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/178.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/264.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/264.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/147.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/147.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/238.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/238.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/164.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/164.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/161.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/161.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/134.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/134.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/481.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/481.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/270.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/270.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/420.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/420.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/303.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/303.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/433.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/433.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/335.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/335.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/493.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/493.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/329.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/329.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/122.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/122.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/444.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/444.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/600.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/600.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/168.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/168.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/563.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/563.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/288.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/288.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/252.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/252.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/100.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/100.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/442.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/442.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/589.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/589.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/359.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/359.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/24.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/24.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/169.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/169.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/261.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/261.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/224.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/224.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/291.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/291.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/556.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/556.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/503.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/503.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/23.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/23.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/27.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/27.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/211.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/211.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/361.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/361.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/26.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/26.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/41.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/41.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/466.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/466.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/513.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/513.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/391.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/391.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/478.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/478.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/145.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/145.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/80.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/80.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/102.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/102.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/132.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/132.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/400.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/400.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/582.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/582.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/237.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/237.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/490.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/490.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/281.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/281.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/385.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/385.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/545.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/545.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/372.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/372.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/7.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/7.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/219.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/219.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/244.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/244.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/34.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/34.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/593.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/593.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/363.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/363.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/117.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/117.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/460.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/460.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/461.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/461.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/415.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/415.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/207.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/207.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/446.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/446.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/488.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/488.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/88.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/88.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/136.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/136.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/333.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/333.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/371.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/371.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/53.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/53.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/505.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/505.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/330.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/330.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/319.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/319.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/369.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/369.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/4.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/4.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/376.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/376.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/243.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/243.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/83.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/83.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/349.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/349.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/602.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/602.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/495.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/495.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/2.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/2.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/235.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/235.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/410.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/410.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/170.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/170.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/323.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/323.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/599.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/599.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/44.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/44.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/571.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/571.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/529.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/529.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/479.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/479.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/279.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/279.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/528.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/528.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/274.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/274.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/48.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/48.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/610.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/610.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/284.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/284.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/438.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/438.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/320.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/320.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/439.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/439.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/66.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/66.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/176.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/176.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/441.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/441.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/141.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/141.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/105.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/105.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/437.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/437.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/98.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/98.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/498.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/498.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/480.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/480.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/302.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/302.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/133.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/133.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/542.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/542.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/311.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/311.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/595.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/595.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/561.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/561.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/423.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/423.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/605.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/605.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/305.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/305.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/538.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/538.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/429.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/429.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/188.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/188.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/611.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/611.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/149.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/149.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/506.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/506.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/285.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/285.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/127.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/127.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/144.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/144.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/397.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/397.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/40.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/40.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/70.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/70.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/84.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/84.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/549.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/549.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/289.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/289.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/476.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/476.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/262.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/262.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/71.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/71.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/499.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/499.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/143.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/143.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/560.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/560.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/187.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/187.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/287.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/287.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/472.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/472.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/210.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/210.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/317.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/317.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/365.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/365.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/362.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/362.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/85.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/85.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/578.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/578.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/474.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/474.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/198.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/198.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/49.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/49.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/407.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/407.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/57.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/57.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/208.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/208.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/336.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/336.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/509.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/509.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/251.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/251.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/113.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/113.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/13.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/13.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/454.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/454.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/89.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/89.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/580.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/580.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/425.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/425.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/131.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/131.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/101.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/101.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/574.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/574.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/456.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/456.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/204.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/204.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/546.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/546.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/370.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/370.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/108.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/108.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/255.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/255.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/552.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/552.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/202.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/202.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/212.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/212.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/154.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/154.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/307.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/307.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/337.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/337.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/564.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/564.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/51.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/51.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/584.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/584.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/408.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/408.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/283.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/283.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/72.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/72.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/428.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/428.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/191.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/191.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/417.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/417.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/597.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/597.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/447.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/447.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/539.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/539.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/197.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/197.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/562.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/562.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/379.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/379.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/548.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/548.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/220.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/220.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/175.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/175.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/97.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/97.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/318.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/318.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/402.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/402.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/158.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/158.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/157.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/157.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/452.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/452.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/344.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/344.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/6.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/6.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/130.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/130.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/475.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/475.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/322.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/322.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/436.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/436.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/138.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/138.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/135.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/135.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/360.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/360.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/21.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/21.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/125.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/125.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/209.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/209.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/240.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/240.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/471.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/471.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/482.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/482.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/266.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/266.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/532.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/532.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/107.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/107.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/59.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/59.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/248.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/248.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/375.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/375.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/1.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/1.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/570.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/570.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/458.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/458.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/586.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/586.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/173.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/173.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/62.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/62.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/271.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/271.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/559.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/559.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/190.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/190.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/38.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/38.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/520.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/520.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/394.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/394.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/487.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/487.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/236.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/236.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/388.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/388.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/50.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/50.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/148.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/148.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/52.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/52.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/332.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/332.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/181.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/181.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/450.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/450.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/33.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/33.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/22.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/22.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/430.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/430.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/502.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/502.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/541.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/541.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/10.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/10.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/308.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/308.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/61.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/61.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/3.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/3.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/234.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/234.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/583.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/583.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/256.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/256.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/395.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/395.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/453.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/453.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/221.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/221.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/445.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/445.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/579.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/579.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/507.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/507.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/413.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/413.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/151.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/151.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/431.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/431.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/555.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/555.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/103.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/103.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/533.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/533.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/496.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/496.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/354.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/354.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/214.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/214.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/64.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/64.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/314.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/314.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/553.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/553.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/275.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/275.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/277.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/277.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/581.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/581.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/374.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/374.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/577.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/577.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/74.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/74.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/573.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/573.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/81.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/81.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/389.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/389.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/17.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/17.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/20.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/20.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/142.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/142.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/183.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/183.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/554.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/554.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/226.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/226.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/585.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/585.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/607.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/607.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/467.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/467.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/494.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/494.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/341.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/341.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/326.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/326.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/94.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/94.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/343.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/343.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/230.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/230.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/521.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/521.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/464.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/464.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/56.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/56.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/295.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/295.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/39.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/39.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/294.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/294.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/16.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/16.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/346.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/346.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/469.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/469.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/390.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/390.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/9.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/9.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/31.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/31.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/150.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/150.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/399.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/399.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/300.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/300.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/348.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/348.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/449.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/449.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/525.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/525.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/25.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/25.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/96.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/96.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/257.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/257.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/165.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/165.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/345.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/345.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/292.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/292.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/426.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/426.png"
+    ]
+  ],
+  "test": [
+    [
+      "./data/cvc_clinicDB/PNG/Original/440.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/440.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/249.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/249.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/435.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/435.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/517.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/517.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/73.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/73.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/68.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/68.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/192.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/192.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/86.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/86.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/172.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/172.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/366.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/366.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/309.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/309.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/140.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/140.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/163.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/163.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/276.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/276.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/432.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/432.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/37.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/37.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/608.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/608.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/171.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/171.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/448.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/448.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/213.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/213.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/594.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/594.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/522.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/522.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/139.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/139.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/342.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/342.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/416.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/416.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/43.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/43.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/189.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/189.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/45.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/45.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/184.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/184.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/93.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/93.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/409.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/409.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/298.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/298.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/242.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/242.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/78.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/78.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/412.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/412.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/90.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/90.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/246.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/246.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/104.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/104.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/355.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/355.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/512.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/512.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/301.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/301.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/486.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/486.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/92.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/92.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/282.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/282.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/65.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/65.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/123.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/123.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/565.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/565.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/313.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/313.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/30.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/30.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/185.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/185.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/126.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/126.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/128.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/128.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/489.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/489.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/18.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/18.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/601.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/601.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/193.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/193.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/227.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/227.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/304.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/304.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/324.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/324.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/352.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/352.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/121.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/121.png"
+    ],
+    [
+      "./data/cvc_clinicDB/PNG/Original/201.png",
+      "./data/cvc_clinicDB/PNG/Ground Truth/201.png"
+    ]
+  ]
+}

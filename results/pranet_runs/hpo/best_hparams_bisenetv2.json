@@ -1,0 +1,8 @@
+{
+  "lr": 0.001117186255426339,
+  "weight_decay": 0.0009490368124138788,
+  "batch_size": 32,
+  "scheduler": "reduceLR",
+  "bce_weight": 0.562363954933232,
+  "img_size": 352
+}
