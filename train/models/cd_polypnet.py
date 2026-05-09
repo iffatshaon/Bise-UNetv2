@@ -6,19 +6,37 @@ import torch.nn.functional as F
 import numpy as np
 import cv2
 
-# Add CD-PolypNet-main/train to sys.path to resolve internal imports
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CD_PATH = os.path.join(PROJECT_ROOT, "CD-PolypNet-main", "train")
-if CD_PATH not in sys.path:
-    sys.path.append(CD_PATH)
+# Robust path detection for CD-PolypNet
+def find_cd_path():
+    possible_roots = [
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+        os.getcwd(),
+        "/media/iffat/DataDrive/Projects/Bise-UNetv2",
+        "/home/user/Documents/Bise-UNetv2"
+    ]
+    possible_names = ["CD-PolypNet-main", "CD-PolypNet", "cd-polypnet-main"]
+    
+    for root in possible_roots:
+        for name in possible_names:
+            path = os.path.join(root, name, "train")
+            if os.path.exists(path):
+                return path
+    return None
 
-try:
-    from segment_anything_training import sam_model_registry
-    from efb_net.efbanch import EFBranch
-    from train.SSFD import SSFDLoss
-    from canny import Net as CannyNet
-except ImportError as e:
-    print(f"Warning: Could not import CD-PolypNet components. Ensure CD-PolypNet-main is in the root. Error: {e}")
+CD_PATH = find_cd_path()
+if CD_PATH:
+    if CD_PATH not in sys.path:
+        sys.path.append(CD_PATH)
+    try:
+        from segment_anything_training import sam_model_registry
+        from efb_net.efbanch import EFBranch
+        from train.SSFD import SSFDLoss
+        from canny import Net as CannyNet
+    except ImportError as e:
+        raise ImportError(f"CD-PolypNet folder found at {CD_PATH} but imports failed: {e}")
+else:
+    raise ImportError("CRITICAL: CD-PolypNet-main folder not found in project root or common locations. "
+                      "Please ensure you have copy-pasted the authors' code into the project root.")
 
 class CDPolypNet(nn.Module):
     """
