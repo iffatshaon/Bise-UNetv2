@@ -6,6 +6,7 @@ from .ducknet_model import DuckNet
 from .hardnet_model import HardNetMSEG
 from .rfdetr_seg import RFDetrSeg
 from .eomt_seg import EoMTSeg
+from .cd_polypnet import get_cd_polypnet
 
 def get_model(name, **kwargs):
     name = name.lower()
@@ -48,6 +49,9 @@ def get_model(name, **kwargs):
             d_model=kwargs.get('d_model', 128),
             n_tokens=kwargs.get('n_tokens', 4),
         )
+
+    elif name == 'cdpolypnet':
+        return get_cd_polypnet(use_pretrained=False, out_ch=out_ch)
 
     else:
         raise ValueError(f"Unknown model architecture: {name}")

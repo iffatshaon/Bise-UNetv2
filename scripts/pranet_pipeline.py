@@ -22,6 +22,7 @@ def main():
     parser.add_argument("--seeds", type=int, nargs="+", default=[42, 123, 456])
     parser.add_argument("--mixed", action="store_true")
     parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--patience", type=int, default=10)
     args = parser.parse_args()
 
     os.makedirs(args.out_dir, exist_ok=True)
@@ -73,7 +74,8 @@ def main():
                 "--seeds"] + [str(s) for s in args.seeds] + [
                 "--folds", str(args.folds),
                 "--epochs", str(args.train_epochs),
-                "--workers", str(args.workers)
+                "--workers", str(args.workers),
+                "--patience", str(args.patience)
             ]
             if args.mixed: cmd_train.append("--mixed")
             run_cmd(cmd_train)

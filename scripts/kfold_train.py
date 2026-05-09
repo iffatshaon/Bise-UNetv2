@@ -73,6 +73,7 @@ def main():
     parser.add_argument("--mixed", action="store_true")
     parser.add_argument("--base-ch", type=int, default=32)
     parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--patience", type=int, default=10)
     args = parser.parse_args()
 
     # Load HParams
@@ -119,14 +120,14 @@ def main():
                 scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
                 step_per_batch = False
             elif hparams["scheduler"] == "reduceLR":
-                scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=10)
+                scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=args.patience // 2)
                 step_per_batch = False
             else: # onecycle
                 scheduler = optim.lr_scheduler.OneCycleLR(optimizer, max_lr=hparams["lr"], total_steps=args.epochs * len(train_loader))
                 step_per_batch = True
                 
             best_dice = 0.0
-            patience = 10
+            patience = args.patience
             patience_counter = 0
             min_delta = 1e-4
             
