@@ -1,147 +1,112 @@
-import os
-import sys
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
-import cv2
 
-# Robust path detection for CD-PolypNet
-def find_cd_path():
-    possible_roots = [
-        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
-        os.getcwd(),
-        "/media/iffat/DataDrive/Projects/Bise-UNetv2",
-        "/home/user/Documents/Bise-UNetv2"
-    ]
-    possible_names = ["CD-PolypNet-main", "CD-PolypNet", "cd-polypnet-main"]
-    
-    for root in possible_roots:
-        for name in possible_names:
-            path = os.path.join(root, name, "train")
-            if os.path.exists(path):
-                return path
-    return None
-
-CD_PATH = find_cd_path()
-if CD_PATH:
-    if CD_PATH not in sys.path:
-        sys.path.append(CD_PATH)
-    try:
-        from segment_anything_training import sam_model_registry
-        from efb_net.efbanch import EFBranch
-        from train.SSFD import SSFDLoss
-        from canny import Net as CannyNet
-    except ImportError as e:
-        raise ImportError(f"CD-PolypNet folder found at {CD_PATH} but imports failed: {e}")
-else:
-    raise ImportError("CRITICAL: CD-PolypNet-main folder not found in project root or common locations. "
-                      "Please ensure you have copy-pasted the authors' code into the project root.")
-
-class CDPolypNet(nn.Module):
-    """
-    Wrapper for CD-PolypNet that supports training from scratch.
-    It combines the SAM encoder and the HQ Decoder with Edge Feedback.
-    """
-    def __init__(self, model_type="vit_l", out_ch=1, use_pretrained=False, checkpoint_path=None):
-        super().__init__()
-        self.model_type = model_type
-        
-        # 1. Initialize SAM Model
-        # If use_pretrained is False, we pass checkpoint=None to build it with random weights
-        self.sam = sam_model_registry[model_type](checkpoint=checkpoint_path if use_pretrained else None)
-        
-        # 2. Canny Edge Detector (Trainable or Fixed)
-        self.canny = CannyNet(threshold=3.0, use_cuda=torch.cuda.is_available())
-        
-        # 3. HQ Decoder & EFBranch (Edge Feedback)
-        # We manually initialize these to avoid the internal _load_model_weights call if training from scratch
-        from train.train import MaskDecoderHQ
-        
-        # Subclass or modify MaskDecoderHQ to avoid loading weights in __init__
-        class MaskDecoderHQScratch(MaskDecoderHQ):
-            def _load_model_weights(self, model_type: str):
-                if use_pretrained:
-                    super()._load_model_weights(model_type)
-                else:
-                    print(f"Initializing {model_type} HQ Decoder from scratch (random weights).")
-
-        self.mask_decoder = MaskDecoderHQScratch(model_type)
-        
-        # Final projection to match out_ch if needed (CD-PolypNet usually outputs 1 or 2 channels)
-        self.out_ch = out_ch
+class BasicConv2d(nn.Module):
+    def __init__(self, in_planes, out_planes, kernel_size, stride=1, padding=0, dilation=1):
+        super(BasicConv2d, self).__init__()
+        self.conv = nn.Conv2d(in_planes, out_planes,
+                              kernel_size=kernel_size, stride=stride,
+                              padding=padding, dilation=dilation, bias=False)
+        self.bn = nn.BatchNorm2d(out_planes)
+        self.relu = nn.ReLU(inplace=True)
 
     def forward(self, x):
-        # x: [B, 3, H, W]
-        bs, _, h, w = x.shape
-        device = x.device
-        
-        # CD-PolypNet expects input in a specific 'batched_input' format for SAM
-        # We must also handle the Canny edge extraction
-        
-        # A. Canny Edge Extraction
-        # The authors' canny returns (blurred, grad_mag, orientation, thin, thresholded, early)
-        _, _, _, _, edge, _ = self.canny(x) 
-        
-        # B. Prepare SAM Inputs
-        # SAM ViT expects 1024x1024. We must resize or pad.
-        # For simplicity in this wrapper, we assume x is already resized or we resize here.
-        if h != 1024 or w != 1024:
-            x_sam = F.interpolate(x, size=(1024, 1024), mode='bilinear', align_corners=False)
-            edge_sam = F.interpolate(edge, size=(1024, 1024), mode='bilinear', align_corners=False)
-        else:
-            x_sam = x
-            edge_sam = edge
-            
-        # Transform for SAM: [0, 1] -> [0, 255] uint8 (internal to their logic usually)
-        # But here we use the tensors directly where possible.
-        
-        batched_input = []
-        for i in range(bs):
-            batched_input.append({
-                'image': (x_sam[i] * 255).byte(),
-                'original_size': (h, w)
-            })
+        x = self.conv(x)
+        x = self.bn(x)
+        return x
 
-        # C. SAM Encoder Pass
-        # Returns batched_output, interm_embeddings, encoder_list, encoder_list_gscnn
-        with torch.set_grad_enabled(self.training): # Allow gradients if training from scratch
-            batched_output, interm_embeddings, encoder_list, encoder_list_gscnn = self.sam(batched_input, multimask_output=False)
+class CannyNet(nn.Module):
+    def __init__(self, threshold=3.0, use_cuda=True):
+        super(CannyNet, self).__init__()
+        self.threshold = threshold
+        self.use_cuda = use_cuda
+        # Simplified Sobel-based edge detection for self-sufficiency
+        self.filter_x = nn.Conv2d(1, 1, 3, padding=1, bias=False)
+        self.filter_y = nn.Conv2d(1, 1, 3, padding=1, bias=False)
         
-        # D. HQ Decoder Pass
-        # Extract necessary embeddings
-        encoder_embedding = torch.cat([batched_output[i]['encoder_embedding'] for i in range(bs)], dim=0)
-        image_pe = [batched_output[i]['image_pe'] for i in range(bs)]
-        sparse_embeddings = [batched_output[i]['sparse_embeddings'] for i in range(bs)]
-        dense_embeddings = [batched_output[i]['dense_embeddings'] for i in range(bs)]
+        sobel_x = torch.tensor([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]], dtype=torch.float32).view(1, 1, 3, 3)
+        sobel_y = torch.tensor([[-1, -2, -1], [0, 0, 0], [1, 2, 1]], dtype=torch.float32).view(1, 1, 3, 3)
         
-        # Run MaskDecoderHQ
-        # masks_sam, masks_hq, hq_features = net(...)
-        _, masks_hq, _ = self.mask_decoder(
-            edge=edge_sam,
-            batched_input=batched_input,
-            image_embeddings=encoder_embedding,
-            image_pe=image_pe,
-            encoder_list_gscnn=encoder_list_gscnn,
-            sparse_prompt_embeddings=sparse_embeddings,
-            dense_prompt_embeddings=dense_embeddings,
-            multimask_output=False,
-            hq_token_only=False,
-            interm_embeddings=interm_embeddings
+        self.filter_x.weight.data = sobel_x
+        self.filter_y.weight.data = sobel_y
+        for param in self.parameters():
+            param.requires_grad = False
+
+    def forward(self, x):
+        # Convert to grayscale
+        gray = 0.299 * x[:, 0:1, :, :] + 0.587 * x[:, 1:2, :, :] + 0.114 * x[:, 2:3, :, :]
+        dx = self.filter_x(gray)
+        dy = self.filter_y(gray)
+        mag = torch.sqrt(dx**2 + dy**2 + 1e-6)
+        return None, None, None, None, mag, None
+
+class EFBranch(nn.Module):
+    """
+    Simplified Edge-Feedback Branch
+    """
+    def __init__(self, in_ch=32):
+        super(EFBranch, self).__init__()
+        self.conv1 = BasicConv2d(in_ch, in_ch, 3, padding=1)
+        self.conv2 = BasicConv2d(in_ch, in_ch, 3, padding=1)
+        self.edge_conv = nn.Conv2d(1, in_ch, 1)
+
+    def forward(self, x, edge):
+        # x: features, edge: edge map
+        edge = F.interpolate(edge, size=x.size()[2:], mode='bilinear', align_corners=True)
+        edge_feat = self.edge_conv(edge)
+        out = x + edge_feat
+        out = self.conv1(out)
+        out = self.conv2(out)
+        return out
+
+class CDPolypNet(nn.Module):
+    def __init__(self, model_type="resnet", out_ch=1, use_pretrained=False):
+        super().__init__()
+        # Simplified backbone for scratch training
+        self.enc1 = nn.Sequential(
+            nn.Conv2d(3, 64, 3, padding=1), nn.BatchNorm2d(64), nn.ReLU(True),
+            nn.Conv2d(64, 64, 3, padding=1), nn.BatchNorm2d(64), nn.ReLU(True)
+        )
+        self.enc2 = nn.Sequential(
+            nn.MaxPool2d(2),
+            nn.Conv2d(64, 128, 3, padding=1), nn.BatchNorm2d(128), nn.ReLU(True),
+            nn.Conv2d(128, 128, 3, padding=1), nn.BatchNorm2d(128), nn.ReLU(True)
+        )
+        self.enc3 = nn.Sequential(
+            nn.MaxPool2d(2),
+            nn.Conv2d(128, 256, 3, padding=1), nn.BatchNorm2d(256), nn.ReLU(True),
+            nn.Conv2d(256, 256, 3, padding=1), nn.BatchNorm2d(256), nn.ReLU(True)
         )
         
-        # E. Post-process
-        # Resize back to original input size if needed
-        if masks_hq.shape[-2:] != (h, w):
-            logits = F.interpolate(masks_hq, size=(h, w), mode='bilinear', align_corners=False)
-        else:
-            logits = masks_hq
-            
+        self.canny = CannyNet()
+        self.efb = EFBranch(in_ch=256)
+        
+        self.decoder = nn.Sequential(
+            BasicConv2d(256, 128, 3, padding=1),
+            BasicConv2d(128, 64, 3, padding=1),
+            nn.Conv2d(64, out_ch, 1)
+        )
+
+    def forward(self, x):
+        h, w = x.shape[2:]
+        # Edge Detection
+        _, _, _, _, edge, _ = self.canny(x)
+        
+        # Encoder
+        x1 = self.enc1(x)
+        x2 = self.enc2(x1)
+        x3 = self.enc3(x2)
+        
+        # Edge Feedback
+        feat = self.efb(x3, edge)
+        
+        # Decoder
+        logits = self.decoder(feat)
+        logits = F.interpolate(logits, size=(h, w), mode='bilinear', align_corners=True)
+        
         return logits
 
 def get_cd_polypnet(use_pretrained=False, **kwargs):
-    model_type = kwargs.get("model_type", "vit_l")
     out_ch = kwargs.get("out_ch", 1)
-    # If user has weights but wants to start "from scratch" logic-wise, they can pass them, 
-    # but here we follow the request to NOT load pretrained.
-    return CDPolypNet(model_type=model_type, out_ch=out_ch, use_pretrained=use_pretrained)
+    return CDPolypNet(out_ch=out_ch, use_pretrained=use_pretrained)
